@@ -1,0 +1,111 @@
+/*================== GOOGLE FONT ==================*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap");
+
+/*================== CSS VARIABLE ==================*/
+::root {
+  /* Colors */
+  --first-block-color: hsl(231, 27%, 26%);
+  --second-block-color: hsl(40, 50%, 55%);
+  --title-color: hsl(40, 47%, 59%);
+  --text-color: hsl(40, 20%, 25%);
+  --dark-color: hsl(0, 0, 16%);
+  --dark-alt-1: hsl(0, 0, 25%);
+  --dark-alt-2: hsl(0, 0, 19%);
+
+  /* Fonts and Typography --> normal to small screen */ /* 0.0625rem = 1px */
+  --biggest-font: 2.5rem; /* 40px */
+  --h1-font: 1.5rem; /* 24px */
+  --h2-font: 1.25rem; /* 20px */
+  --h3-font: 1rem; /* 16px */
+  --normal-font: 0.938rem; /* 15px */
+  --small-font: 0.813rem; /* 13px */
+  --smaller-font: 0.75rem; /* 12px */
+
+  /* Font Family */
+  --jost-font: "Jost", sans-serif;
+
+  /* Font Weight */
+  --light: 300;
+  --reguler: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --bolder: 800;
+
+  /* Margenes/Paddings */
+  --x-0-25: 0.25rem; /* 4px */
+  --x-0-5: 0.5rem; /* 8px */
+  --x-0-75: 0.75rem; /* 12px */
+  --x-1: 1rem; /* 16px */
+  --x-1-25: 1.25rem; /* 20px */
+  --x-1-5: 1.5rem; /* 24px */
+  --x-1-75: 1.75rem; /* 28px */
+  --x-2: 2rem; /* 32px */
+  --x-2-5: 2.5rem; /* 40px */
+  --x-2-75: 2.75rem; /* 44px */
+  --x-3: 3rem; /* 48px */
+
+  /* Z Index */
+  --z-1: 1;
+  --z-10: 10;
+  --z-100: 100;
+
+  /* Others */
+  --hidden: hidden;
+  --transition: 0.3s;
+}
+
+/* Fonts and Typography --> big screen */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font: 4rem; /* 64px */
+    --h1-font: 2.25rem; /* 36px */
+    --h2-font: 1.75rem; /* 24px */
+    --h3-font: 1.25rem; /* 20px */
+    --normal-font: 1rem; /* 16px */
+    --small-font: 0.875rem; /* 14px */
+    --smaller-font: 0.813rem; /* 13px */
+  }
+}
+
+/*================== BASE CSS ==================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: var(--normal-font);
+  font-family: var(--jost-font);
+  background-image: linear-gradient(to right, rgb(64, 64, 64), rgb(48, 48, 48));
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+  font-size: var(--normal-font);
+  font-family: var(--jost-font);
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*================== REUSEABLE CSS ==================*/
+.container {
+  max-width: 1160px;
+  margin-left: var(--x-0-5);
+  margin-left: var(--x-0-5);
+}
