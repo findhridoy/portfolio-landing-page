@@ -6,30 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Landing Page</title>
 
+    <!-------------- Remix Icon --------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-------------- Style CSS --------------->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <!------------ Loader with Blocks ------------->
+    <!-- <div class="first__block"></div>
+    <div class="temp__block"></div> -->
+    <div class="loader">
+      <ul>
+        <li>L</li>
+        <li>O</li>
+        <li>A</li>
+        <li>D</li>
+        <li>I</li>
+        <li>N</li>
+        <li>G</li>
+      </ul>
+    </div>
+    <!-- <div class="second__block"></div> -->
+    <div class="third__block"></div>
+
+    <!------------ Header ------------->
+    <header class="header">
       <nav class="nav container">
         <a class="nav__logo" href="#">
           <svg
             class="logo__text"
-            height="59"
             viewBox="0 0 97 59"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M3.60546 55.1659L3.62018 55.1815L3.63532 55.1967C4.81008 56.3714 6.30985 56.932 8.00799 56.932C9.72829 56.932 11.2492 56.3864 12.3956 55.1816C13.5705 53.9985 14.116 52.4743 14.116 50.752V34.468H37.108V50.752C37.108 52.4569 37.618 53.9764 38.7415 55.1659C39.8897 56.3817 41.4162 56.932 43.144 56.932C44.8339 56.932 46.3238 56.3755 47.4597 55.1816C48.6345 53.9985 49.18 52.4743 49.18 50.752V8.48801C49.18 6.7933 48.6749 5.28239 47.5318 4.13052C46.3853 2.92565 44.8644 2.38 43.144 2.38C41.4236 2.38 39.9027 2.92565 38.7562 4.13052C37.6131 5.28239 37.108 6.79331 37.108 8.48801V23.98H14.116V8.48801C14.116 6.77502 13.575 5.25979 12.381 4.11502C11.2362 2.92097 9.72096 2.38 8.00799 2.38C6.2876 2.38 4.76667 2.92566 3.62017 4.13055C2.4771 5.28242 1.97198 6.79332 1.97198 8.48801V50.752C1.97198 52.4569 2.48199 53.9764 3.60546 55.1659ZM77.3222 28.2686L77.3353 28.2673L77.3483 28.2657C79.0637 28.0639 80.6228 27.6075 81.6176 26.6127C82.6316 25.5987 82.993 24.1801 82.993 22.672C82.993 21.1324 82.5389 19.7215 81.3954 18.7305C80.2874 17.7702 78.8658 17.4603 77.3503 17.5761C77.3489 17.5762 77.3474 17.5763 77.3459 17.5764L76.3554 17.6472C76.3538 17.6473 76.3522 17.6474 76.3506 17.6475C73.9013 17.808 71.644 18.5314 69.604 19.8198L69.5963 19.8246L69.5887 19.8296C68.8846 20.2863 68.2418 20.8078 67.66 21.3915C67.4168 20.4888 66.9559 19.684 66.2282 19.0403C65.1346 18.0246 63.7421 17.572 62.197 17.572C60.6391 17.572 59.2322 18.0301 58.0687 18.9997L58.0524 19.0132L58.0366 19.0272C56.824 20.0972 56.305 21.5831 56.305 23.248V51.112C56.305 52.8105 56.8138 54.327 58.0009 55.4443L58.0339 55.4753L58.0687 55.5043C59.2427 56.4826 60.6785 56.932 62.269 56.932C63.8595 56.932 65.2953 56.4826 66.4693 55.5043L66.4876 55.489L66.5055 55.4731C67.7547 54.3627 68.305 52.8371 68.305 51.112V35.992C68.305 33.8269 68.8707 32.136 69.9152 30.8155C70.9314 29.588 72.5926 28.746 75.1639 28.4844C75.1642 28.4844 75.1644 28.4843 75.1647 28.4843L77.3222 28.2686ZM83.027 54.9557L83.039 54.9683L83.0513 54.9807C84.3638 56.2932 86.0282 56.932 87.928 56.932C89.8277 56.932 91.4921 56.2932 92.8046 54.9807L92.817 54.9683L92.829 54.9557C94.1183 53.605 94.756 51.9315 94.756 50.032C94.756 48.1381 94.1211 46.4781 92.8168 45.1675C91.5114 43.8067 89.844 43.132 87.928 43.132C86.012 43.132 84.3445 43.8067 83.0392 45.1675C81.7349 46.4782 81.1 48.1381 81.1 50.032C81.1 51.9315 81.7376 53.605 83.027 54.9557Z"
-              stroke-width="3"
+              stroke-width="2"
             />
           </svg>
         </a>
         <div class="nav__menu">
           <ul class="nav__list"></ul>
         </div>
+
+        <div class="nav__toggle">
+          <input class="toggle__btn" type="checkbox" />
+          <div class="nav__hamburger">
+            <div class="nav__hamburger--bar"></div>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <main>
+      <!------------ HOME ------------->
+      <section class="home__section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__name">Matt Jhonson</h3>
+            <p class="home__name--title">UX/UI Designer</p>
+            <h1 class="home__title">
+              Design is thinking <br />
+              made visual.
+            </h1>
+            <button class="button button--line">View Profile</button>
+          </div>
+          <div class="home__image">
+            <img src="assets/images/home-img.jpg" alt="Home Image" />
+          </div>
+          <div class="home__social">
+            <div class="home__social--left">
+              <ul>
+                <li> <a href=""><i class="ri-play-fill home__social--icon"></i></a></li>
+              </ul>
+             
+            </div>
+            <div class="home__social--right">
+              <ul>
+                <li><a href=""><i class="ri-facebook-fill home__social--icon"></i></i></a></li>
+                <li><a href=""><i class="ri-twitter-fill home__social--icon"></i></a></li>
+                <li><a href=""><i class="ri-linkedin-fill home__social--icon"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
