@@ -7,17 +7,18 @@
     <title>Portfolio Landing Page</title>
 
     <!-------------- Remix Icon --------------->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+
+     <!-------------- Animation CSS --------------->
+     <link rel="stylesheet" href="assets/css/animation.css" />
+     
     <!-------------- Style CSS --------------->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!------------ Loader with Blocks ------------->
-    <!-- <div class="first__block"></div>
-    <div class="temp__block"></div> -->
+    <div class="first__block"></div>
+    <div class="temp__block"></div>
     <div class="loader">
       <ul>
         <li>L</li>
@@ -29,7 +30,7 @@
         <li>G</li>
       </ul>
     </div>
-    <!-- <div class="second__block"></div> -->
+    <div class="second__block"></div>
     <div class="third__block"></div>
 
     <!------------ Header ------------->
@@ -55,6 +56,8 @@
           <input class="toggle__btn" type="checkbox" />
           <div class="nav__hamburger">
             <div class="nav__hamburger--bar"></div>
+            <div class="nav__hamburger--bar"></div>
+            <div class="nav__hamburger--bar"></div>
           </div>
         </div>
       </nav>
@@ -64,30 +67,31 @@
       <!------------ HOME ------------->
       <section class="home__section" id="home">
         <div class="home__container container grid">
-          <div class="home__data">
-            <h3 class="home__name">Matt Jhonson</h3>
-            <p class="home__name--title">UX/UI Designer</p>
-            <h1 class="home__title">
-              Design is thinking <br />
-              made visual.
-            </h1>
-            <button class="button button--line">View Profile</button>
+          <div class="home__content grid">
+            <div class="home__data">
+              <h3 class="home__name">Matt Jhonson</h3>
+              <p class="home__name--title">UX/UI Designer</p>
+              <h1 class="home__title">
+                Design is thinking <br />
+                made visual.
+              </h1>
+              <button class="button button--line">View Profile</button>
+            </div>
+            <div class="home__image">
+              <img src="assets/images/home-img.jpg" alt="Home Image" />
+            </div>
           </div>
-          <div class="home__image">
-            <img src="assets/images/home-img.jpg" alt="Home Image" />
-          </div>
-          <div class="home__social">
+          <div class="home__social container">
             <div class="home__social--left">
               <ul>
                 <li> <a href=""><i class="ri-play-fill home__social--icon"></i></a></li>
               </ul>
-             
             </div>
             <div class="home__social--right">
               <ul>
-                <li><a href=""><i class="ri-facebook-fill home__social--icon"></i></i></a></li>
+                <li><a href=""><i class="ri-facebook-box-fill home__social--icon"></i></i></a></li>
                 <li><a href=""><i class="ri-twitter-fill home__social--icon"></i></a></li>
-                <li><a href=""><i class="ri-linkedin-fill home__social--icon"></i></a></li>
+                <li><a href=""><i class="ri-linkedin-box-fill home__social--icon"></i></a></li>
               </ul>
             </div>
           </div>
